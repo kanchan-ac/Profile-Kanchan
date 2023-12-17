@@ -4,34 +4,86 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Index</title>
+    <style>
+      #header {
+        color: rgb(20, 19, 19);
+        font-weight: bolder;
+      }
+      header {
+        background-color: rgb(235, 230, 230);
+      }
+      #nav,
+      #homeLink {
+        color: rgb(20, 19, 19);
+        font-weight: bolder;
+      }
+      footer {
+        background-color: rgb(235, 230, 230);
+      }
+      footer a {
+        margin-right: 40px;
+        text-decoration: none;
+      }
+
+      nav a {
+        margin-right: 40px;
+        text-decoration: none;
+      }
+      #homeLink {
+        margin-left: 10px;
+      }
+      .profile {
+        margin-left: 10px;
+      }
+    </style>
   </head>
   <body>
-    
     <!-- Header Section -->
     <header>
-        <span> Name: Kanchan Choudhari &nbsp;&nbsp;&nbsp;&nbsp; Mobile: 8600 2550 66 &nbsp;&nbsp;&nbsp;&nbsp; Email: abc@gmail.com</span>
+      <span id="header">
+        Name: Kanchan Choudhari &nbsp;&nbsp;&nbsp;&nbsp; Mobile: 8600 2550 66
+        &nbsp;&nbsp;&nbsp;&nbsp; Email: abc@gmail.com</span
+      >
     </header>
-    <hr>
+    <hr />
     <!-- Navigation Section -->
     <nav>
-        <a href="home.html" target="mainFrame">HOME</a> &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;
-        <a href="techStack.html" target="mainFrame">TECH STACK</a> &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;
-        <a href="project.html" target="mainFrame">PROJECT</a> &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;
-        <a href="education.html" target="mainFrame">EDUCATION</a> &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;
-        <a href="others.html" target="mainFrame">OTHERS</a>
+      <a href="home.html" target="mainFrame"><span id="homeLink">HOME</span></a>
+      &nbsp;
+      <a href="techStack.html" target="mainFrame"
+        ><span id="nav">TECH STACK</span></a
+      >
+      &nbsp; &nbsp; &nbsp;
+      <a href="project.html" target="mainFrame"
+        ><span id="nav">PROJECT</span></a
+      >
+      &nbsp; &nbsp;
+      <a href="education.html" target="mainFrame"
+        ><span id="nav">EDUCATION</span></a
+      >
+      <a href="others.html" target="mainFrame"><span id="nav">OTHERS</span></a>
     </nav>
-    <hr>
+    <hr />
 
     <!-- Body Section -->
-    <iframe src="home.html" name="mainFrame" frameborder="1" width="900px" height="450px">
-
+    <iframe
+      src="home.html"
+      name="mainFrame"
+      frameborder="1"
+      width="900px"
+      height="450px"
+    >
     </iframe>
     <!-- Footer Section -->
     <footer>
-        <a href="https://www.linkedin.com/in/kanchan-firke-454099146">Linked IN</a> &nbsp;&nbsp;&nbsp;&nbsp;
-        <a href="https://github.com/kanchan-ac/Profile-Kanchan">GitHub</a>&nbsp;&nbsp;&nbsp;&nbsp;
-        <a href="https://www.naukri.com/">Naukri</a>
+      <a href="https://www.linkedin.com/in/kanchan-firke-454099146"
+        ><span id="header" class="profile">Linked IN</span></a
+      >
+
+      <a href="https://github.com/kanchan-ac/Profile-Kanchan"
+        ><span id="header">GitHub</span></a
+      >
+      <a href="https://www.naukri.com/"><span id="header">Naukri</span></a>
     </footer>
-   
   </body>
 </html>
