@@ -4,6 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Index</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!-- CDN Link - Google font families -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Concert+One&family=Poppins&family=Roboto:wght@500;900&display=swap"
+      rel="stylesheet"
+    />
     <style>
       #header {
         color: rgb(20, 19, 19);
@@ -11,10 +22,11 @@
       }
       header {
         background-color: rgb(235, 230, 230);
+        text-align: right;
       }
       #nav,
       #homeLink {
-        color: rgb(20, 19, 19);
+        color: rgb(97, 31, 31);
         font-weight: bolder;
       }
       footer {
@@ -24,10 +36,15 @@
         margin-right: 40px;
         text-decoration: none;
       }
+      header span {
+        padding: 20px;
+        margin-right: 10px;
+      }
 
       nav a {
         margin-right: 40px;
         text-decoration: none;
+        font-family: "Poppins", sans-serif;
       }
       #homeLink {
         margin-left: 10px;
@@ -35,14 +52,33 @@
       .profile {
         margin-left: 10px;
       }
+      img {
+        position: relative;
+        width: 40px;
+        height: 40px;
+      }
+      #logo {
+        position: fixed;
+        top: 6px;
+        left: 2px;
+      }
     </style>
   </head>
   <body>
     <!-- Header Section -->
     <header>
-      <span id="header">
-        Name: Kanchan Choudhari &nbsp;&nbsp;&nbsp;&nbsp; Mobile: 8600 2550 66
-        &nbsp;&nbsp;&nbsp;&nbsp; Email: abc@gmail.com</span
+      <div id="logo">
+        <img src="assets/myLogo.PNG" />
+      </div>
+      <br />
+      <span>
+        <i class="fa fa-user" aria-hidden="true"></i> Kanchan Choudhari</span
+      >
+      <span>
+        <i class="fa fa-phone-square" aria-hidden="true"></i> 8600 2550 66
+      </span>
+      <span>
+        <i class="fa fa-envelope" aria-hidden="true"></i> abc@gmail.com</span
       >
     </header>
     <hr />
@@ -76,14 +112,20 @@
     </iframe>
     <!-- Footer Section -->
     <footer>
-      <a href="https://www.linkedin.com/in/kanchan-firke-454099146"
-        ><span id="header" class="profile">Linked IN</span></a
-      >
+      <a
+        href="https://www.linkedin.com/in/kanchan-firke-454099146"
+        target="_blank"
+        ><span id="header" class="profile"
+          ><i class="fa fa-linkedin-square" aria-hidden="true"></i></span
+      ></a>
 
-      <a href="https://github.com/kanchan-ac/Profile-Kanchan"
-        ><span id="header">GitHub</span></a
-      >
-      <a href="https://www.naukri.com/"><span id="header">Naukri</span></a>
+      <a href="https://github.com/kanchan-ac/Profile-Kanchan" target="_blank"
+        ><span id="header"
+          ><i class="fa fa-github-square" aria-hidden="true"></i></span
+      ></a>
+      <a href="https://www.naukri.com/" target="_blank"
+        ><span id="header"><i class="fa fa-indent" aria-hidden="true"></i></span
+      ></a>
     </footer>
   </body>
 </html>
