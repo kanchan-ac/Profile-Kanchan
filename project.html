@@ -21,8 +21,15 @@
             font-family: 'Roboto Slab', serif;
         }
         ul li{
-        list-style-type: circle;
+        list-style-type: none;
         }
+        #emoji li::before{
+        content: "☞";
+      }
+      #para::selection{
+        background-color:antiquewhite;
+
+      }
     </style>
 </head>
 <hr>
@@ -31,11 +38,11 @@
 <p class="project"><strong>Name:&nbsp;&nbsp;&nbsp;<u>Student Management</u></strong></p>
 <p class="project"><strong><u>Environment:</u></strong>&nbsp;&nbsp;<mark>Angular 8,TypeScript,JavaScript(ES6),HTML5,CSS,Bootstrap,GitHub,Desktop GitHub,Agile and JIRA,IDE-VS Code</mark></p>
 <p class="project"><strong>Team Size: 06</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>Duration:</strong>&nbsp;<i>2021-1 <sup>st</sup>-July till <u>present</u></i></p>
-<p class="project"> <strong>Project Description:</strong>&nbsp;This project is mainly used for student Management in Colleges, where It help to manage student record like <br>
+<p class="project" id="para"> <strong id="para">Project Description:</strong>&nbsp;This project is mainly used for student Management in Colleges, where It help to manage student record like <br>
 student registration,student update information and to see all his or her academic activities like score card,attendance.</p>
 <hr>
 <p class="project"><strong>Roles and Responsibilities:</strong></p>
-<ul>
+<ul id="emoji">
     <li>Designed and implemented the user interface using HTML 5 and CSS</li>
     <li>Work closely with backend developers for code integration</li>
     <li>Identifying and troubleshooting issue with front end code</li>
