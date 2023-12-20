@@ -4,7 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <style>
+
         nav a{
             padding: 10px;
             font-weight: bolder;
@@ -29,6 +34,39 @@
             left: 6px;
 
         }
+        table,td,tr,th{
+           border: none;
+        }
+        @keyframes example {
+  0%   {background-color: red;}
+  25%  {background-color: yellow;}
+  50%  {background-color: blue;}
+  100% {background-color: green;}
+        }
+        td,th{
+            padding: 10px;
+            margin: 10px;
+            background-color: red;
+  animation-name: example;
+  animation-duration: 7s;
+
+        
+        }
+        th:hover{
+            background-color: aqua;
+        }
+        span.b {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  padding: 5px;
+  border: 1px solid blue;
+  background-color: yellow;
+}
+
+       
+    
+        
     </style>
 </head>
 <body>
@@ -41,5 +79,18 @@
             <a href="#">Others</a>
         </div>
     </nav>
+    <table>
+        <thead>
+            <th id="span"><i class="fa fa-chrome" aria-hidden="true"></i></th>
+            <th id="span"><i class="fa fa-internet-explorer" aria-hidden="true"></i></th>
+            <th id="span"><i class="fa fa-firefox" aria-hidden="true"></i></th>
+        </thead>
+        <tr>
+            <td>chrome</td>
+            <td>internet</td>
+            <td>firefox</td>
+        </tr>
+        <span class="b">i am kanchan</span>
+    </table>
 </body>
 </html>
